@@ -16,6 +16,7 @@
 		28EB15802CB0714B00201878 /* CalculatorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EB157F2CB0714B00201878 /* CalculatorAppTests.swift */; };
 		28EB158A2CB0714B00201878 /* CalculatorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EB15892CB0714B00201878 /* CalculatorAppUITests.swift */; };
 		28EB158C2CB0714B00201878 /* CalculatorAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EB158B2CB0714B00201878 /* CalculatorAppUITestsLaunchTests.swift */; };
+		28EB159A2CB0718C00201878 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 28EB15992CB0718C00201878 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28EB159A2CB0718C00201878 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = CalculatorApp;
+			packageProductDependencies = (
+				28EB15992CB0718C00201878 /* SnapKit */,
+			);
 			productName = CalculatorApp;
 			productReference = 28EB15652CB0714900201878 /* CalculatorApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 28EB155C2CB0714900201878;
+			packageReferences = (
+				28EB15982CB0718C00201878 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 28EB15662CB0714900201878 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -601,6 +609,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28EB15982CB0718C00201878 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28EB15992CB0718C00201878 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28EB15982CB0718C00201878 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28EB155D2CB0714900201878 /* Project object */;
 }
